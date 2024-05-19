@@ -38,12 +38,12 @@ def download_update():
 root = tk.Tk()
 root.title("Сортировка слов")
 root['bg']='#363535'
-version = 'Версия - 5.0'
+version = 'Версия - 1.0'
 input_area = scrolledtext.ScrolledText(root, width=30, font=('Arial, 14'), height=10,
 bg='#262626', fg='white', selectbackground='#ebb45b', wrap=tk.WORD)
 input_area.grid(row=1, column=0, padx=10, pady=10)
 
-sort_button = tk.Button(root, text="Сортировать", font=('Arial, 14'),relief='ridge',bd=0, bg='red',fg='white',activeforeground='white',activebackground='#ffb53d',  command=sort_words)
+sort_button = tk.Button(root, text="Сортировать", font=('Arial, 14'),relief='ridge',bd=0, bg='#ed980e',fg='white',activeforeground='white',activebackground='#ffb53d',  command=sort_words)
 sort_button.grid(row=2, column=0, padx=10, pady=10)
 
 output_area = scrolledtext.ScrolledText(root, width=30,font=('Arial, 14'),height=10, bg='#262626',fg='white',selectbackground='#ebb45b', wrap=tk.WORD)
